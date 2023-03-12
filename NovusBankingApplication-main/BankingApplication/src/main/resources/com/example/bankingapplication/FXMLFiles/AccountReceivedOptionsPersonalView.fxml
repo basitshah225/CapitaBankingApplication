@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="blue-pane" stylesheets="@../CSSFiles/GUIStyleSheet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankingapplication.GUI.Controllers.AccountReceivedOptionsPersonalController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="158.0" minWidth="10.0" prefWidth="52.28572191510881" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="224.28570665631975" minWidth="10.0" prefWidth="81.57143620082313" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.7142780848912" minWidth="10.0" prefWidth="120.1428418840681" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="109.42857142857144" minWidth="10.0" prefWidth="80.14287240164617" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="141.57142857142856" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="130.14285714285717" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="119.28571428571428" minHeight="10.0" prefHeight="105.28571428571428" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="183.71428571428572" minHeight="10.0" prefHeight="111.42857142857144" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="181.28571428571428" minHeight="10.0" prefHeight="95.14285714285711" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="132.57142857142856" minHeight="10.0" prefHeight="33.571428571428555" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="61.28571428571428" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button id="sendMoneyToAnotherAccountButton" fx:id="sendMoneyToAnotherAccountButton" mnemonicParsing="false" onAction="#sendMoneyToAnotherAccount" prefHeight="60.0" prefWidth="120.0" styleClass="button-gui" text="Send Money to Another Account" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Button id="viewAccountDetailsButton" fx:id="viewAccountDetailsButton" mnemonicParsing="false" onAction="#viewAccountDetails" prefHeight="60.0" prefWidth="120.0" styleClass="button-gui" text="View Account Details" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+      <Button id="changeCustomerDetailsButton" fx:id="changeCustomerDetailsButton" mnemonicParsing="false" onAction="#changeCustomerDetails" prefHeight="60.0" prefWidth="120.0" styleClass="button-gui" text="Change Customer Details" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Button id="changeOverDraftButton" fx:id="changeOverDraftButton" mnemonicParsing="false" onAction="#changeOverDraft" prefHeight="60.0" prefWidth="120.0" styleClass="button-gui" text="Change OverDraft" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+      <Button id="depositIntoAccountButton" fx:id="depositIntoAccountButton" mnemonicParsing="false" onAction="#depositMoney" prefHeight="60.0" prefWidth="120.0" styleClass="button-gui" text="Deposit Into Account" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Button id="withdrawFromAccountButton" fx:id="withdrawFromAccountButton" mnemonicParsing="false" onAction="#withdrawMoney" prefHeight="60.0" prefWidth="120.0" styleClass="button-gui" text="Withdraw from Account" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="80.0" styleClass="button-gui" text="Back" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <Button fx:id="button_need_help" mnemonicParsing="false" onAction="#needHelp" styleClass="btnNeedHelpRound" stylesheets="@../CSSFiles/GUIStyleSheet.css" text="Need Help ?" translateX="-10.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+   </children>
+</GridPane>

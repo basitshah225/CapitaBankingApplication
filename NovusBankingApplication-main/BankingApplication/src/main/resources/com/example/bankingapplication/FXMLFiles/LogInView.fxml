@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankingapplication.GUI.Controllers.LogInController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" styleClass="darkgreen-pane" stylesheets="@../CSSFiles/GUIStyleSheet.css">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="55.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/acme-bank-logo.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="400.0" styleClass="blue-pane" stylesheets="@../CSSFiles/GUIStyleSheet.css">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="75.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="button_login" layoutX="68.0" layoutY="266.0" mnemonicParsing="false" onAction="#logInUser" prefHeight="38.0" prefWidth="224.0" style="-fx-cursor: hand;" styleClass="lightblue-button" stylesheets="@../CSSFiles/GUIStyleSheet.css" text="Login">
+               <font>
+                  <Font name="Calibri" size="17.0" />
+               </font>
+            </Button>
+            <HBox alignment="CENTER_LEFT" layoutX="15.0" layoutY="110.0" prefHeight="50.0" prefWidth="330.0" styleClass="tf-box" stylesheets="@../CSSFiles/GUIStyleSheet.css">
+               <children>
+                  <TextField fx:id="text_field_username" opacity="0.5" prefHeight="44.0" prefWidth="289.0" promptText="Username" styleClass="tf-box" stylesheets="@../CSSFiles/GUIStyleSheet.css">
+                     <font>
+                        <Font name="Calibri Bold" size="17.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/usericon.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin></ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="15.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="330.0" styleClass="tf-box" stylesheets="@../CSSFiles/GUIStyleSheet.css">
+               <children>
+                  <TextField fx:id="text_field_password" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="44.0" prefWidth="289.0" promptText="Password" styleClass="tf-box" stylesheets="@../CSSFiles/GUIStyleSheet.css">
+                     <font>
+                        <Font name="Calibri Bold" size="17.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/lockicon.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin></ImageView>
+               </children>
+            </HBox>
+            <HBox layoutY="4.0" prefHeight="25.0" prefWidth="85.0" translateX="200.0" translateY="300.0" />
+            <Button id="closeProgramButton" fx:id="closeProgramButton" layoutX="68.0" layoutY="316.0" mnemonicParsing="false" onAction="#closeProgram" styleClass="button-gui" text="Close Program" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="button_need_help" layoutX="213.0" layoutY="318.0" maxWidth="100.0" mnemonicParsing="false" onAction="#needHelp" styleClass="btn_need_help" stylesheets="@../CSSFiles/GUIStyleSheet.css" text="Need Help ?" textFill="#120b0b">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</HBox>

@@ -1,0 +1,61 @@
+.blue-pane {
+    -fx-background-color: #0F97A6;
+}
+
+.darkgreen-pane {
+    -fx-background-color: #FFFFFF;
+}
+
+.white-pane {
+    -fx-background-color: #FFFFFF;
+}
+
+.tf-box {
+    -fx-background-color: transparent;
+    -fx-border-color: #91D9D2;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-text-fill: #FFFFFF;
+}
+
+.lightblue-button {
+    -fx-background-color: #91D9D2;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #0DA6A6;
+}
+
+.button-gui {
+    -fx-background-color: #91D9D2;
+    -fx-border-color: #91D9D2;
+    -fx-border-width: 1px 0px 1px 0px;
+    -fx-text-fill: #FFFFFF;
+}
+
+.button-gui:hover {
+    -fx-border-color: #3b8a82;
+    -fx-border-width: 2px 2px 2px 2px;
+}
+
+.onScreenText{
+    -fx-text-fill: #FFFFFF;
+}
+
+.btn_need_help {
+    -fx-background-color: TRANSPARENT;
+    -fx-cursor: hand;
+    -fx-font-family: Calibri;
+    -fx-font-size: 13px;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: BOLD;
+}
+
+.btnNeedHelpRound {
+    -fx-border-radius: 50%;
+    -fx-background-color: #0F97A6;
+    -fx-border-color: #0DA6A6;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-text-fill: #FFFFFF;
+}
+
+
+

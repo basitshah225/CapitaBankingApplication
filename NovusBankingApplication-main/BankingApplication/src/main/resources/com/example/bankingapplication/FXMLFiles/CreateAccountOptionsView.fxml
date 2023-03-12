@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="blue-pane" stylesheets="@../CSSFiles/GUIStyleSheet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankingapplication.GUI.Controllers.CreateAccountOptionsController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="16.28571333203997" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.28571333203996" minWidth="10.0" prefWidth="180.71428666796004" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="111.0" minWidth="8.571428571428584" prefWidth="13.714285714285722" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.5714285714286" minWidth="10.0" prefWidth="183.71428571428572" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.0" minWidth="8.571428571428555" prefWidth="13.571428571428555" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.71428571428578" minWidth="10.0" prefWidth="180.71428571428578" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="84.99996948242188" minWidth="10.0" prefWidth="11.571428571428555" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="108.42857142857143" minHeight="10.0" prefHeight="108.42857142857143" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="304.42857142857144" minHeight="10.0" prefHeight="201.28571428571428" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="200.57142857142856" minHeight="5.571428571428555" prefHeight="64.14285714285717" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="95.28571428571428" minHeight="0.0" prefHeight="26.428571428571445" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button id="createPersonalAccountButton" fx:id="createPersonalAccountButton" mnemonicParsing="false" onAction="#onCreatePersonalAccountButtonClicked" prefHeight="115.0" prefWidth="175.0" styleClass="button-gui" text="Create Personal Account" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button id="createISAAccountButton" fx:id="createISAAccountButton" mnemonicParsing="false" onAction="#onCreateISAAccountButtonClicked" prefHeight="115.0" prefWidth="175.0" styleClass="button-gui" text="Create ISA Account" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Button id="createBusinessAccountButton" fx:id="createBusinessAccountButton" mnemonicParsing="false" onAction="#onCreateBusinessAccountButtonClicked" prefHeight="115.0" prefWidth="175.0" styleClass="button-gui" text="Create Business Account" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+      <Button id="backButton" fx:id="backButton" mnemonicParsing="false" onAction="#back" styleClass="button-gui" text="Back" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button fx:id="button_need_help" mnemonicParsing="false" onAction="#needHelp" styleClass="btnNeedHelpRound" stylesheets="@../CSSFiles/GUIStyleSheet.css" text="Need Help ?" translateX="60.0" translateY="-10.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+   </children>
+</GridPane>

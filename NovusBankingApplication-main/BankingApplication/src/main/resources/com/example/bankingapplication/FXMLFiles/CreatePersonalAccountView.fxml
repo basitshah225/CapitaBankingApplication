@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="blue-pane" stylesheets="@../CSSFiles/GUIStyleSheet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankingapplication.GUI.Controllers.CreatePersonalAccountController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="2.999998927116394" prefWidth="58.71428571428572" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0000010728836" minWidth="10.0" prefWidth="132.42857142857144" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.99999237060547" minWidth="10.0" prefWidth="124.14285714285717" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.0" minWidth="10.0" prefWidth="179.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label styleClass="tf-box" text="First Name:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label styleClass="tf-box" text="Last Name:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Label styleClass="tf-box" text="Postcode:" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Label styleClass="tf-box" text="Initial Balance:" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Label styleClass="tf-box" text="Photo ID Type:" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Label styleClass="tf-box" text="Photo ID Number:" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+      <Button id="createAccountButton" fx:id="createAccountButton" mnemonicParsing="false" onAction="#createAccount" styleClass="button-gui" text="Create Account" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+      <TextField id="firstNameTextField" fx:id="firstNameTextField" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <TextField id="lastNameTextField" fx:id="lastNameTextField" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <TextField id="addressTextField" fx:id="addressTextField" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <TextField id="balanceTextField" fx:id="balanceTextField" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <TextField id="photoIDNumberTextField" fx:id="photoIDNumberTextField" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+      <ChoiceBox id="photoIDTypeChoiceBox" fx:id="photoIDTypeChoiceBox" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+      <Label styleClass="tf-box" text="OverDraft Amount:" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+      <TextField id="overDraftAmountTextField" fx:id="overDraftAmountTextField" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="91.0" styleClass="button-gui" text="Cancel" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+      <Button fx:id="button_need_help" mnemonicParsing="false" onAction="#needHelp" styleClass="btnNeedHelpRound" stylesheets="@../CSSFiles/GUIStyleSheet.css" text="Need Help ?" translateY="-10.0" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+   </children>
+</GridPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="blue-pane" stylesheets="@../CSSFiles/GUIStyleSheet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankingapplication.GUI.Controllers.ChangeCustomerDetailsController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label styleClass="tf-box" text="New Last Name:" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label styleClass="tf-box" text="New Postcode:" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label styleClass="onScreenText" text="Leave blank if you want the value to stay the same" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField id="newLastNameTextField" fx:id="newLastNameTextField" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <TextField id="newAddressTextField" fx:id="newAddressTextField" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Button id="submitChangeButton" fx:id="submitChangeButton" mnemonicParsing="false" onAction="#submitChanges" styleClass="button-gui" text="Submit Change" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Button id="backButton" fx:id="backButton" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="85.0" styleClass="button-gui" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Button fx:id="button_need_help" mnemonicParsing="false" onAction="#needHelp" styleClass="btnNeedHelpRound" stylesheets="@../CSSFiles/GUIStyleSheet.css" text="Need Help ?" translateY="-10.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+   </children>
+</GridPane>
